@@ -21,3 +21,23 @@ const obtenerUsuario = () => {
     return usuario
   } else return null
 }
+
+const persistirUsuario = usuario => {
+  const usuarioStr = JSON.stringify(usuario)
+  localStorage.setItem("usuario", usuarioStr)
+}
+
+const registrarAEvento = (evento) => {
+  const usuario = obtenerUsuario()
+
+  const hayEvento = Boolean(usuario.eventos.find(evt => evt.id == evento.id))
+
+  if (hayEvento) {
+    alert("Ya te has registrado a ese evento")
+    return
+  }
+
+  usuario.eventos.push(evento)
+
+  persistirUsuario(usuario)
+}
