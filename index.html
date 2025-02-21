@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Bienestar al Aprendiz</title>
+
+  <link rel="stylesheet" href="/static/css/util.css">
+  <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+  
+  <div id="registro" class="col gap-05 align-center justify-center">
+    <img width="250" src="/static/images/logoSena.png" alt="">
+
+    <h1>Bienvenido Aprendiz</h1>
+
+    <form onsubmit="event.preventDefault(); registro(event);" class="row">
+      <input name="nombre" type="text" placeholder="Escribe tu nombre">
+
+      <button>Iniciar sesion</button>
+    </form>
+    
+  </div>
+
+  <div id="modal-bienvenida" class="modal-floating hidden">
+    <div class="modal-content col justify-center align-center">
+      <h1>Bienvenido, <span id="nombre-usuario"></span></h1>
+      <p>Has sido registrado correctamente</p>
+      <p>Serás redirigido al inicio dentro de unos segundos</p>
+    </div>
+  </div>
+
+  <script src="/static/js/util.js"></script>
+  <script src="/static/js/usuario.js"></script>
+  <script src="/static/js/index.js"></script>
+
+</body>
+</html>

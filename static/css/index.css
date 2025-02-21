@@ -1,0 +1,46 @@
+:root {
+  --verde-menta-suave: #A2D9A0;
+  --verde-esmeralda-claro: #50C878;
+  --verde-bosque: #228B22;
+  --verde-oscuro: #006400;
+  --blanco-puro: #FFFFFF;
+  --blanco-roto: #F5F5F5;
+  --blanco-crema: #FFFDD0;
+}
+
+
+body {
+  min-height: 100dvh;
+
+  display: grid;
+  place-content: center;
+
+  padding-bottom: 80px;
+
+  background-color: var(--blanco-roto);
+}
+
+form {
+  & input {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+
+    border-radius: 8px 0px 0px 8px;
+
+    padding: 10px;
+  }
+
+  & button {
+    padding: 10px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+    border-radius: 0px 8px 8px 0px;
+
+    background: var(--verde-bosque);
+    font-weight: 600;
+
+  }
+}
