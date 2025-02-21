@@ -6,7 +6,7 @@
     --blanco-puro: #FFFFFF;
     --blanco-roto: #F5F5F5;
     --blanco-crema: #FFFDD0;
-  }
+}
 main{
     background-color: var(--blanco-crema)
 }
