@@ -1,0 +1,45 @@
+:root {
+    --verde-menta-suave: #A2D9A0;
+    --verde-esmeralda-claro: #50C878;
+    --verde-bosque: #228B22;
+    --verde-oscuro: #006400;
+    --blanco-puro: #FFFFFF;
+    --blanco-roto: #F5F5F5;
+    --blanco-crema: #FFFDD0;
+}
+.profileinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    padding: 25px;
+    background-color: var(--blanco-roto);
+    border-radius: 15px;
+}
+.man{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.value{
+    padding: 5px;
+}
+.conent{
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--blanco-crema);
+    display: flex;
+    justify-content: center; 
+    align-items:center;
+}
+#dx{
+    border-radius: 0px 0px 15px 15px;
+}
+.seccion{
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgb(196, 196, 196);
+}
+main{
+    border-radius: 15px;
+    background-color: var(--verde-esmeralda-claro);
+    margin: 25px;
+}
