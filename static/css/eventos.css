@@ -1,0 +1,24 @@
+.evento {
+  padding: 10px;
+  background-color: var(--verde-menta-suave);
+  border-radius: 14px;
+
+  & img {
+    border-radius: 14px;
+    height: 250px;
+
+    object-fit: cover;
+  }
+
+  & button {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #09f;
+    border-radius: 14px;
+
+    &:disabled {
+      color: black;
+      filter: brightness(50%);
+    }
+  }
+}
