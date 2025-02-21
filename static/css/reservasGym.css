@@ -1,0 +1,21 @@
+.image-calendar-gym{
+    border: 5px solid rgb(223, 195, 195);
+    border-radius: 80px;
+    padding: 7px;
+}
+:root {
+    --verde-menta-suave: #A2D9A0;
+    --verde-esmeralda-claro: #50C878;
+    --verde-bosque: #228B22;
+    --verde-oscuro: #006400;
+    --blanco-puro: #FFFFFF;
+    --blanco-roto: #F5F5F5;
+    --blanco-crema: #FFFDD0;
+  }
+main{
+    background-color: var(--blanco-crema)
+}
+.tittle{
+    margin-top: 50px;
+    margin-left: 20px;
+}
