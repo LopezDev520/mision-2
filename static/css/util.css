@@ -1,0 +1,87 @@
+/* Clases de utilidad */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.padding-sm {
+  padding: 1em;
+}
+
+.margin-sm {
+  margin: 1em;
+}
+
+.gap-05 {
+  gap: 0.5em;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+/* Modal de pantalla completa */
+.modal {
+  position: absolute;
+  inset: 0;
+  background-color: white;
+
+  padding: 20px;
+}
+
+/* Modal flotante */
+.modal-floating {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+}
+/* Clases de utilidad */
