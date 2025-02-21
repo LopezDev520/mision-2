@@ -4,17 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio - Bienestar al Aprendiz</title>
+
+    <link rel="stylesheet" href="/static/css/layout.css">
     <link rel="stylesheet" href="/static/css/util.css">
     <link rel="stylesheet" href="/static/css/noticias.css">
+
 </head>
 
 <body>
-    <!-- noticias 1-->
+
+    <header class="row align-center justify-between">
+        <img width="60px" src="/static/images/logoSena.png" alt="">
+
+        <h3>Bienestar al aprendiz</h3>
+
+        <div class="info row align-center">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z" />
+                </svg>
+            </button>
+            <span id="nombre-usuario"></span>
+        </div>
+    </header>
+
+    <SEction>
+            <!-- noticias 1-->
     <div class="container">
         <div class="row no-wrap">
             <div class="col">
-                <img src="/static/images/noti-img.avif" alt="Imagen Noticias">
+                <img class="imageNews" src="/static/images/noti-img.avif" alt="Imagen Noticias">
             </div>
             <div class="col grow">
                 <h2>Las 3 carreras mejor pagadas del SENA</h2>
@@ -36,6 +57,9 @@
                         </li>
                     </ul>
                 </div>
+                <div class="infoNews">
+                    <span>Ver Mas +</span>
+                </div>
             </div>
         </div>
     </div>
@@ -44,7 +68,7 @@
     <div class="container">
         <div class="row no-wrap">
             <div class="col">
-                <img src="/static/images/noti-empleo.jpg" alt="Imagen Noticias">
+                <img class="imageNews" src="/static/images/noti-empleo.jpg" alt="Imagen Noticias">
             </div>
             <div class="col grow">
                 <h2>La APE busca Aprendices</h2>
@@ -60,7 +84,7 @@
     <div class="container">
         <div class="row no-wrap">
             <div class="col">
-                <img src="/static/images/noti-falso.png" alt="Imagen Noticias">
+                <img class="imageNews" src="/static/images/noti-falso.png" alt="Imagen Noticias">
             </div>
             <div class="col grow">
                 <h2>No caiga en engaños</h2>
@@ -71,6 +95,15 @@
             </div>
         </div>
     </div>
+    </SEction>
+
+
+
+
+    <script src="/static/js/usuario.js"></script>
+    <script src="/static/js/util.js"></script>
+    <script src="/static/js/initPage.js"></script>
+
 
 </body>
 
