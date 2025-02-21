@@ -1,0 +1,41 @@
+#carouselExample img{
+    object-fit: cover;
+}
+.menu{
+    display: flex;
+}
+.option{
+    margin: 50px;
+    background-color: aquamarine;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.contenedor img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.contenedor:hover{
+    transition: 0.5s;
+    filter: brightness(50%);
+    scale: 101%;
+}
