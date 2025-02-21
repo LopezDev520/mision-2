@@ -19,6 +19,10 @@
 h5{
     margin-top: 10px;
 }
+.diploidNews{
+    display: flex;
+    justify-content: flex-end;
+}
 .infoNews{
     font-size: 14px;
 }
