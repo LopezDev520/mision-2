@@ -1,8 +1,21 @@
+:root {
+    --verde-menta-suave: #A2D9A0;
+    --verde-esmeralda-claro: #50C878;
+    --verde-bosque: #228B22;
+    --verde-oscuro: #006400;
+    --blanco-puro: #FFFFFF;
+    --blanco-roto: #F5F5F5;
+    --blanco-crema: #FFFDD0;
+  }
+main{
+    background-color: var(--blanco-crema)
+}
 #carouselExample img{
     object-fit: cover;
 }
 .menu{
     display: flex;
+    justify-content: space-around;
 }
 .option{
     margin: 50px;
@@ -38,4 +51,41 @@
     transition: 0.5s;
     filter: brightness(50%);
     scale: 101%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrusel {
+    width: 99.24vw;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.imagenes {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: deslizar 120s infinite linear;
+    
+    
+}
+
+.imagenes img {
+    
+    width: 100vw;
+    height: 50vh;
+    object-fit:cover;
+    object-position: center;
+}
+
+@keyframes deslizar {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100vw); }
+    66% { transform: translateX(-200vw); }
+    100% { transform: translateX(0); }
 }
