@@ -3,7 +3,8 @@ const usuarioPlantilla = {
   edad: null,
   formaciones: [],
   documento: null,
-  eventos: []
+  eventos: [],
+  solicitudesSalida: []
 }
 
 const guardarUsuario = usuario => {
