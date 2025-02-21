@@ -13,7 +13,7 @@
     --blanco-crema: #FFFDD0;
   }
 main{
-    background-color: var(--blanco-crema)
+    background-color: var(--blanco-roto)
 }
 .tittle{
     margin-top: 50px;
