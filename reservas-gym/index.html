@@ -43,59 +43,57 @@
                     </div>
                 </div>
                 <div class="col grow">
-                    <h1 class="tittle">haz tus Reservas de gym</h1>
+                    <h1 class="tittle">haz tus Reserva de gym</h1>
                 </div>
             </div>
 
-            <form onsubmit="event.preventDefault(); solicitarSalida(event);" class="col gap-05">
+            <form onsubmit="event.preventDefault(); solicitarHoraReserva(event);" class="col gap-05">
                 <div class="row">
-                  <!-- Hora de salida -->
-                  <label class="col grow">
-                    <p class="row gap-05 align-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <g fill="none" stroke="#000000" stroke-width="2">
-                          <circle cx="12" cy="12" r="7" />
-                          <path stroke-linecap="round"
-                            d="M5.965 3.136a4 4 0 0 0-2.829 2.829m14.899-2.829a4 4 0 0 1 2.829 2.829M12 8v3.75c0 .138.112.25.25.25H15" />
-                        </g>
-                      </svg>
-                      Hora de salida
-                    </p>
-                    <input name="horaSalida" type="time" class="margin-sm">
-                  </label>
-          
-                  <!-- Hora de llegada -->
-                  <label class="col grow">
-                    <p class="row gap-05 align-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <g fill="none" stroke="#000000" stroke-width="2">
-                          <circle cx="12" cy="12" r="7" />
-                          <path stroke-linecap="round"
-                            d="M5.965 3.136a4 4 0 0 0-2.829 2.829m14.899-2.829a4 4 0 0 1 2.829 2.829M12 8v3.75c0 .138.112.25.25.25H15" />
-                        </g>
-                      </svg>
-                      Hora de salida
-                    </p>
-                    <input name="horaLlegada" type="time" class="margin-sm">
-                  </label>
+                    <!-- Hora de la reservacion -->
+                    <label class="col grow">
+                        <p class="row gap-05 align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <g fill="none" stroke="#000000" stroke-width="2">
+                                    <circle cx="12" cy="12" r="7" />
+                                    <path stroke-linecap="round"
+                                        d="M5.965 3.136a4 4 0 0 0-2.829 2.829m14.899-2.829a4 4 0 0 1 2.829 2.829M12 8v3.75c0 .138.112.25.25.25H15" />
+                                </g>
+                            </svg>
+                            Hora de la Reservacion
+                        </p>
+                        <input name="horareserva" type="time" class="margin-sm">
+                    </label>
+
+                    <!-- Hora de llegada -->
+                    <label class="col grow">
+                        <p class="row gap-05 align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24">
+                                <path fill="#000000"
+                                    d="M5 22q-.825 0-1.412-.587T3 20V6q0-.825.588-1.412T5 4h1V3q0-.425.288-.712T7 2t.713.288T8 3v1h8V3q0-.425.288-.712T17 2t.713.288T18 3v1h1q.825 0 1.413.588T21 6v14q0 .825-.587 1.413T19 22zm0-2h14V10H5zm7-6q-.425 0-.712-.288T11 13t.288-.712T12 12t.713.288T13 13t-.288.713T12 14m-4 0q-.425 0-.712-.288T7 13t.288-.712T8 12t.713.288T9 13t-.288.713T8 14m8 0q-.425 0-.712-.288T15 13t.288-.712T16 12t.713.288T17 13t-.288.713T16 14m-4 4q-.425 0-.712-.288T11 17t.288-.712T12 16t.713.288T13 17t-.288.713T12 18m-4 0q-.425 0-.712-.288T7 17t.288-.712T8 16t.713.288T9 17t-.288.713T8 18m8 0q-.425 0-.712-.288T15 17t.288-.712T16 16t.713.288T17 17t-.288.713T16 18" />
+                            </svg>
+                            Fecha de la Reservación
+                        </p>
+                        <input name="mesReserva" type="date" class="margin-sm">
+                    </label>
                 </div>
-          
+
                 <label class="col grow">
-                  <p class="row gap-05 align-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                      <path fill="#000000" fill-rule="evenodd"
-                        d="M3.172 5.172C2 6.343 2 8.229 2 12s0 5.657 1.172 6.828S6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172S22 15.771 22 12s0-5.657-1.172-6.828S17.771 4 14 4h-4C6.229 4 4.343 4 3.172 5.172M18.576 7.52a.75.75 0 0 1-.096 1.056l-2.196 1.83c-.887.74-1.605 1.338-2.24 1.746c-.66.425-1.303.693-2.044.693s-1.384-.269-2.045-.693c-.634-.408-1.352-1.007-2.239-1.745L5.52 8.577a.75.75 0 0 1 .96-1.153l2.16 1.799c.933.777 1.58 1.315 2.128 1.667c.529.34.888.455 1.233.455s.704-.114 1.233-.455c.547-.352 1.195-.89 2.128-1.667l2.159-1.8a.75.75 0 0 1 1.056.097"
-                        clip-rule="evenodd" />
-                    </svg>
-                    Motivo
-                  </p>
-                  <textarea name="motivo" type="time" class="margin-sm" cols="7" placeholder="Motivo de la salida"></textarea>
+                    <p class="row gap-05 align-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="#000000" fill-rule="evenodd"
+                                d="M3.172 5.172C2 6.343 2 8.229 2 12s0 5.657 1.172 6.828S6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172S22 15.771 22 12s0-5.657-1.172-6.828S17.771 4 14 4h-4C6.229 4 4.343 4 3.172 5.172M18.576 7.52a.75.75 0 0 1-.096 1.056l-2.196 1.83c-.887.74-1.605 1.338-2.24 1.746c-.66.425-1.303.693-2.044.693s-1.384-.269-2.045-.693c-.634-.408-1.352-1.007-2.239-1.745L5.52 8.577a.75.75 0 0 1 .96-1.153l2.16 1.799c.933.777 1.58 1.315 2.128 1.667c.529.34.888.455 1.233.455s.704-.114 1.233-.455c.547-.352 1.195-.89 2.128-1.667l2.159-1.8a.75.75 0 0 1 1.056.097"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Motivo de la reservación
+                    </p>
+                    <textarea name="motivo" type="time" class="margin-sm" cols="7"
+                        placeholder="Motivo de la Reservacion"></textarea>
                 </label>
-          
+
                 <div class="row justify-center">
-                  <button>Solicitar Salida</button>
+                    <button>Solicitar Reserva</button>
                 </div>
-              </form>
+            </form>
 
         </div>
 
@@ -104,7 +102,7 @@
     <footer>
 
     </footer>
-
+    <script src="/static/js/reservasGym.js"></script>
     <script src="/static/js/usuario.js"></script>
     <script src="/static/js/util.js"></script>
     <script src="/static/js/initPage.js"></script>
