@@ -1,6 +1,6 @@
 
 const usuarioPlantilla = {
-  edad: null,
+  correoElectronico: null,
   formaciones: [{
     nombre: "Analisis y desarrollo de Software",
     ficha: "2772941"

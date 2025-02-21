@@ -35,22 +35,30 @@
         <div class="conent">
             <img class="man" src="/static/images/profile.png" alt="" height="200px">
             <div class="profileinfo">
-                <span id="nombre-usuario" class="value"></span>
-                <span class="value">Correo</span>
+                <span id="perfil-nombre-usuario" class="value"></span>
+                <span id="perfil-correo-usuario" class="value">Correo</span>
                 <span class="value">***********</span>
-            </div>
 
+                <button onclick="editarDatos();" id="editar-datos" class="row gap-05 align-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83l3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z" />
+                    </svg>
+                    Editar Datos
+                </button>
+            </div>
         </div>
+
         <div class="xd">
-        <div class="seccion">
-            <span>Formaciones</span>
-        </div>
-        <div class="seccion">
-            <span>Eventos</span>
-        </div>
-        <div class="seccion" id="dx">
-            <span>Salidas</span>
-        </div>
+            <div class="seccion">
+                <span>Formaciones</span>
+            </div>
+            <div class="seccion">
+                <span>Eventos</span>
+            </div>
+            <div class="seccion" id="dx">
+                <span>Salidas</span>
+            </div>
         </div>
     </main>
 
@@ -58,14 +66,46 @@
 
     </footer>
 
+    <div id="informacion-modal" class="modal hidden">
+        <h1>Modifica tus datos</h1>
+        <form onsubmit="event.preventDefault(); modificarUsuario(event);" class="col gap-05 margin-sm padding-sm">
+            <label>
+                <p>Nombre Completo</p>
+                <input name="nombre" type="text">
+            </label>
+
+            <label>
+                <p>Correo Electronico</p>
+                <input name="correo" type="text">
+            </label>
+
+            <label>
+                <p>Documento</p>
+                <input name="documento" type="number">
+            </label>
+
+            <div class="row padding-sm">
+                <button>Guardar Datos</button>
+            </div>
+        </form>
+
+        <button id="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+
     <script src="/static/js/usuario.js"></script>
     <script src="/static/js/util.js"></script>
     <script src="/static/js/initPage.js"></script>
+    <script src="/static/js/perfil.js"></script>
 
     <script>
-        const usuario= obtenerUsuario()
-        console.log(usuario)
-        document.getElementById('nombre-usuario').innerHTML = usuario.nombre;
+        const usuario = obtenerUsuario()
+        $('#perfil-nombre-usuario').textContent = usuario.nombre;
+        $('#perfil-correo-usuario').textContent = usuario.correo;
     </script>
 
 </body>
