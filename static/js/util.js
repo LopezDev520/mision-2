@@ -5,5 +5,8 @@ const obtenerDatosFormulario = formData => {
   return obj
 }
 
-const mostrarElemento = selector => document.querySelector(selector).classList.remove("hidden")
-const ocultarElemento = selector => document.querySelector(selector).classList.add("hidden")
+const $ = sel => document.querySelector(sel)
+const $$ = sel => document.querySelectorAll(sel)
+
+const mostrarElemento = selector => $(selector).classList.remove("hidden")
+const ocultarElemento = selector => $(selector).classList.add("hidden")
