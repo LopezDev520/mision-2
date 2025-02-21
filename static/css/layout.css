@@ -24,12 +24,18 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: auto 1fr auto;
+
+  background: var(--blanco-roto);
+}
+
+main {
+  padding: 20px;
 }
 
 
 header {
   border-bottom: 1px solid black;
-  padding: 20px;
+  padding: 20px 40px;
 
   .info {
     display: flex;
