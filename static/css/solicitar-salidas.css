@@ -1,7 +1,8 @@
 form {
   padding: 30px;
 
-  & input, textarea {
+  & input,
+  textarea {
     font-size: 18px;
     padding: 15px 20px;
     border-radius: 14px;
@@ -21,5 +22,17 @@ form {
     font-weight: 600;
     cursor: pointer;
   }
-  
+
+}
+
+#acciones {
+  text-align: center;
+
+  & a {
+    padding: 10px 20px;
+    border-radius: 14px;
+    background-color: var(--verde-esmeralda-claro);
+    color: black;
+    margin: 10px;
+  }
 }

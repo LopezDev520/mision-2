@@ -1,7 +1,10 @@
 
 const usuarioPlantilla = {
   edad: null,
-  formaciones: [],
+  formaciones: [{
+    nombre: "Analisis y desarrollo de Software",
+    ficha: "2772941"
+  }],
   documento: null,
   eventos: [],
   solicitudesSalida: []
@@ -17,7 +20,7 @@ const guardarUsuario = usuario => {
 
 const obtenerUsuario = () => {
   const usuarioStr = localStorage.getItem("usuario")
-  if(usuarioStr) {
+  if (usuarioStr) {
     const usuario = JSON.parse(usuarioStr)
     return usuario
   } else return null
@@ -40,5 +43,13 @@ const registrarAEvento = (evento) => {
 
   usuario.eventos.push(evento)
 
+  persistirUsuario(usuario)
+}
+
+const crearSolicitudSalida = solicitudSalida => {
+  const usuario = obtenerUsuario()
+  solicitudSalida.pendiente = true
+  solicitudSalida.permitida = false
+  usuario.solicitudesSalida.push(solicitudSalida)
   persistirUsuario(usuario)
 }

@@ -26,6 +26,7 @@ const solicitarSalida = event => {
     return
   }
 
-  
+  crearSolicitudSalida({ horaLlegada, horaSalida, motivo })
 
+  mostrarElemento("#sended-modal")
 }
