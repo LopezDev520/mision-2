@@ -13,7 +13,7 @@ const eventos = [
     nombre: "Actividad deportiva",
     fecha: "22 de Febrero",
     hora: "4:00 P.M - 6:00 P.M",
-    lugar: "Sena Tamaco"
+    lugar: "Coliseo"
   }
 ]
 
