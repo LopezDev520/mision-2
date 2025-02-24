@@ -1,5 +1,5 @@
 
-const solicitarHoraReserva = event => {
+const solicitarReserva = event => {
     const solicitud = obtenerDatosFormulario(new FormData(event.target))
-    console.log(solicitud)
+    alert("Reserva de gym enviada")
   }
