@@ -53,3 +53,18 @@ const crearSolicitudSalida = solicitudSalida => {
   usuario.solicitudesSalida.push(solicitudSalida)
   persistirUsuario(usuario)
 }
+
+const obtenerEventosInscritos = () => {
+  const usuario = obtenerUsuario()
+  return usuario.eventos
+}
+
+const obtenerFormacionesActuales = () => {
+  const usuario = obtenerUsuario()
+  return usuario.formaciones
+}
+
+const obtenerSolicitudesSalidas = () => {
+  const usuario = obtenerUsuario()
+  return usuario.solicitudesSalida
+}

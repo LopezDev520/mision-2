@@ -39,7 +39,7 @@
             <div class="profileinfo">
                 <span id="perfil-nombre-usuario" class="value"></span>
                 <span id="perfil-correo-usuario" class="value">Correo</span>
-                <span class="value">***********</span>
+                <span id="documento" class="value"></span>
 
                 <button onclick="editarDatos();" id="editar-datos" class="row gap-05 align-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
@@ -53,13 +53,18 @@
 
         <div class="xd">
             <div class="seccion">
-                <span>Formaciones</span>
+                <h3>Tus formaciones actuales</h3>
+                <section id="seccion-formaciones" class="row"></section>
             </div>
+
             <div class="seccion">
-                <span>Eventos</span>
+                <h3>Tus eventos inscritos</h3>
+                <section id="seccion-eventos" class="row"></section>
             </div>
+
             <div class="seccion" id="dx">
-                <span>Salidas</span>
+                <h3>Tus salidas solicitadas</h3>
+                <section id="seccion-solicitud-salidas" class="row"></section>
             </div>
         </div>
     </main>
@@ -68,35 +73,37 @@
 
     </footer>
 
-    <div id="informacion-modal" class="modal hidden">
-        <h1>Modifica tus datos</h1>
-        <form onsubmit="event.preventDefault(); modificarUsuario(event);" class="col gap-05 margin-sm padding-sm">
-            <label>
-                <p>Nombre Completo</p>
-                <input name="nombre" type="text">
-            </label>
+    <div id="informacion-modal" class="modal-floating hidden">
+        <div class="modal-content">
+            <h1>Modifica tus datos</h1>
+            <form onsubmit="event.preventDefault(); modificarUsuario(event);" class="col gap-05 margin-sm padding-sm">
+                <label>
+                    <p>Nombre Completo</p>
+                    <input name="nombre" type="text">
+                </label>
 
-            <label>
-                <p>Correo Electronico</p>
-                <input name="correo" type="text">
-            </label>
+                <label>
+                    <p>Correo Electronico</p>
+                    <input name="correo" type="text">
+                </label>
 
-            <label>
-                <p>Documento</p>
-                <input name="documento" type="number">
-            </label>
+                <label>
+                    <p>Documento</p>
+                    <input name="documento" type="number">
+                </label>
 
-            <div class="row padding-sm">
-                <button>Guardar Datos</button>
-            </div>
-        </form>
+                <div class="row gap-05 padding-sm">
+                    <button type="submit">Guardar Datos</button>
 
-        <button id="close-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M18 6L6 18M6 6l12 12" />
-            </svg>
-        </button>
+                    <button type="button" onclick="ocultarElemento('#informacion-modal')" id="close-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M18 6L6 18M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="/static/js/usuario.js"></script>
@@ -108,6 +115,7 @@
         const usuario = obtenerUsuario()
         $('#perfil-nombre-usuario').textContent = usuario.nombre;
         $('#perfil-correo-usuario').textContent = usuario.correo;
+        $('#documento').textContent = usuario.documento
     </script>
 
 </body>

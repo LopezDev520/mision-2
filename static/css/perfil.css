@@ -79,3 +79,14 @@ form button {
     justify-content: center;
     padding: 10px;
 }
+
+.mini-contenedor {
+    padding: 20px;
+    margin: 10px;
+    background: var(--blanco-roto);
+    border-radius: 10px;
+}
+
+.pendiente { color: orange; }
+.permitida { color: green; }
+.no-permitida { color: red }
